@@ -32,7 +32,7 @@ export default function UsersTable({ users, onDeleteUser }: { users: User[], onD
           filterPlaceholder="Search by age"
           style={{ minWidth: '12rem' }}
         />
-         <Column
+        <Column
           field="university"
           header="University"
           filter
@@ -42,9 +42,9 @@ export default function UsersTable({ users, onDeleteUser }: { users: User[], onD
         <Column
           header="Actions"
           body={(rowUser: User) => (
-            <Button 
+            <Button
               icon="pi pi-times"
-              severity="danger" 
+              severity="danger"
               aria-label="Delete Row"
               onClick={() => onDeleteUser(rowUser)}
             />
