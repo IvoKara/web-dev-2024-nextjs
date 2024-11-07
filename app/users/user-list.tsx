@@ -31,6 +31,13 @@ export default function UsersTable({ users }: { users: User[] }) {
           filterPlaceholder="Search by age"
           style={{ minWidth: '12rem' }}
         />
+         <Column
+          field="university"
+          header="University"
+          filter
+          filterPlaceholder="Search by universities"
+          style={{ minWidth: '12rem' }}
+        />
       </DataTable>
     </div>
   );
